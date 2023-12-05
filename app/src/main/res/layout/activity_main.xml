@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tiempo"
+        android:layout_width="131dp"
+        android:layout_height="115dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <ListView
+        android:id="@+id/ranking"
+        android:layout_width="300dp"
+        android:layout_height="352dp"
+        android:background="@color/black"
+        android:cacheColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802"/>
+
+
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="108dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="202dp"
+                android:backgroundTint="#008F39"
+                android:onClick="stop"
+                android:text="PAUSA"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.194"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.236" />
+
+                <Button
+                    android:id="@+id/jugar"
+                    android:layout_width="119dp"
+                    android:layout_height="54dp"
+                    android:backgroundTint="#0000FF"
+                    android:onClick="segundero"
+                    android:text="PLAY"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.702"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.193" />
+
+                <Button
+                    android:id="@+id/apuntarRecord"
+                    android:layout_width="116dp"
+                    android:layout_height="64dp"
+                    android:backgroundTint="#FF8000"
+                    android:onClick="Add"
+                    android:text="RECORD"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.697"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.282" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
